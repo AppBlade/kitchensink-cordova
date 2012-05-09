@@ -27,6 +27,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "AppBlade.h"
 
 #ifdef CORDOVA_FRAMEWORK
     #import <Cordova/CDVPlugin.h>
@@ -108,6 +109,18 @@
         [[UIApplication sharedApplication] setStatusBarOrientation:newOrient];
     }
     
+    AppBlade *blade = [AppBlade sharedManager];
+    
+    // Populate with values from the project SDK settings
+    // see README for details
+    blade.appBladeProjectID = @"";
+    blade.appBladeProjectToken = @"";
+    blade.appBladeProjectSecret = @"";
+    blade.appBladeProjectIssuedTimestamp = @"";
+    
+    [blade catchAndReportCrashes];
+    [blade allowFeedbackReporting];
+    
     [self.window addSubview:self.viewController.view];
     [self.window makeKeyAndVisible];
     
@@ -130,6 +143,12 @@
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];
     
     return YES;    
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    // This checks for AppBlade authentication
+    [[AppBlade sharedManager] checkApproval];
 }
 
 - (void) dealloc

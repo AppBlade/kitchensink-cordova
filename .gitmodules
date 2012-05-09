@@ -1,0 +1,3 @@
+[submodule "AppBlade"]
+	path = AppBlade
+	url = git@github.com:AppBlade/SDK.git

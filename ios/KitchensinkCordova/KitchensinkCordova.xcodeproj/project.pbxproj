@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4F1F2F155B098200E58266 /* libAppBlade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4F1F10155B086D00E58266 /* libAppBlade.a */; };
+		7E4F1F32155B0A2F00E58266 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4F1F30155B0A2700E58266 /* Security.framework */; };
 		93AED2AD15471A3400BD82E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AED2AC15471A3400BD82E2 /* Foundation.framework */; };
 		93AED2AF15471A3400BD82E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AED2AE15471A3400BD82E2 /* UIKit.framework */; };
 		93AED2B115471A3400BD82E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AED2B015471A3400BD82E2 /* CoreGraphics.framework */; };
@@ -45,7 +47,33 @@
 		93AED3211547214900BD82E2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AED31F1547214900BD82E2 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7E4F1F0F155B086D00E58266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E4F1F07155B086D00E58266 /* AppBlade.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CBF479F813969C2B00949297;
+			remoteInfo = AppBlade;
+		};
+		7E4F1F11155B086D00E58266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E4F1F07155B086D00E58266 /* AppBlade.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB51D2FC1429274C00A43CB5;
+			remoteInfo = AppBladeUniversal;
+		};
+		7E4F1F2D155B097C00E58266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E4F1F07155B086D00E58266 /* AppBlade.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF479F713969C2B00949297;
+			remoteInfo = AppBlade;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7E4F1F07155B086D00E58266 /* AppBlade.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppBlade.xcodeproj; path = ../../AppBlade/iOS/Framework/AppBlade.xcodeproj; sourceTree = "<group>"; };
+		7E4F1F30155B0A2700E58266 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		93AED2A815471A3400BD82E2 /* KitchensinkCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchensinkCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AED2AC15471A3400BD82E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93AED2AE15471A3400BD82E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -95,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4F1F32155B0A2F00E58266 /* Security.framework in Frameworks */,
+				7E4F1F2F155B098200E58266 /* libAppBlade.a in Frameworks */,
 				93AED2AD15471A3400BD82E2 /* Foundation.framework in Frameworks */,
 				93AED2AF15471A3400BD82E2 /* UIKit.framework in Frameworks */,
 				93AED2B115471A3400BD82E2 /* CoreGraphics.framework in Frameworks */,
@@ -112,19 +142,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93AED2A515471A3400BD82E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E4F1F08155B086D00E58266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E4F1F10155B086D00E58266 /* libAppBlade.a */,
+				7E4F1F12155B086D00E58266 /* libAppBladeUniversal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		93AED29A15471A3400BD82E2 = {
 			isa = PBXGroup;
 			children = (
+				7E4F1F07155B086D00E58266 /* AppBlade.xcodeproj */,
 				93AED30815471ECA00BD82E2 /* www */,
 				93AED2C615471A3400BD82E2 /* KitchensinkCordova */,
 				93AED2AB15471A3400BD82E2 /* Frameworks */,
@@ -143,6 +176,7 @@
 		93AED2AB15471A3400BD82E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E4F1F30155B0A2700E58266 /* Security.framework */,
 				93AED2AC15471A3400BD82E2 /* Foundation.framework */,
 				93AED2AE15471A3400BD82E2 /* UIKit.framework */,
 				93AED2B015471A3400BD82E2 /* CoreGraphics.framework */,
@@ -284,13 +318,12 @@
 				93AED2A115471A3400BD82E2 /* Sources */,
 				93AED2A215471A3400BD82E2 /* Frameworks */,
 				93AED2A315471A3400BD82E2 /* Resources */,
-				93AED2A415471A3400BD82E2 /* Sources */,
-				93AED2A515471A3400BD82E2 /* Frameworks */,
 				93AED2A615471A3400BD82E2 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E4F1F2E155B097C00E58266 /* PBXTargetDependency */,
 			);
 			name = KitchensinkCordova;
 			productName = KitchensinkCordova;
@@ -318,12 +351,35 @@
 			mainGroup = 93AED29A15471A3400BD82E2;
 			productRefGroup = 93AED2A915471A3400BD82E2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7E4F1F08155B086D00E58266 /* Products */;
+					ProjectRef = 7E4F1F07155B086D00E58266 /* AppBlade.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				93AED2A715471A3400BD82E2 /* KitchensinkCordova */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7E4F1F10155B086D00E58266 /* libAppBlade.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppBlade.a;
+			remoteRef = 7E4F1F0F155B086D00E58266 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E4F1F12155B086D00E58266 /* libAppBladeUniversal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppBladeUniversal.a;
+			remoteRef = 7E4F1F11155B086D00E58266 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93AED2A315471A3400BD82E2 /* Resources */ = {
@@ -381,14 +437,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93AED2A415471A3400BD82E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E4F1F2E155B097C00E58266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppBlade;
+			targetProxy = 7E4F1F2D155B097C00E58266 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93AED2C915471A3400BD82E2 /* InfoPlist.strings */ = {
@@ -442,7 +499,8 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -457,6 +515,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -469,7 +529,8 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -477,6 +538,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -495,7 +558,9 @@
 					"DEBUG=1,",
 					"CORDOVA_FRAMEWORK=1",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../AppBlade/**";
 				INFOPLIST_FILE = "KitchensinkCordova/KitchensinkCordova-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../Release_Production-universal/**";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -525,7 +590,9 @@
 					"NDEBUG=1,",
 					"CORDOVA_FRAMEWORK=1",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../AppBlade/**";
 				INFOPLIST_FILE = "KitchensinkCordova/KitchensinkCordova-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../Release_Production-universal/**";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
